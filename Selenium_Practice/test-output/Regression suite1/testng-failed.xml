@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Regression suite1]" parallel="tests">
+  <test thread-count="1" verbose="2" name="Program Test on FF(failed)" parallel="tests">
+    <parameter name="browser" value="ch"/>
+    <parameter name="url" value="https://www.monsterindia.com/"/>
+    <classes>
+      <class name="com.automationpratice.pageclasses.homepage.home.Testing">
+        <methods>
+          <include name="loginScreen" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.automationpratice.pageclasses.homepage.home.Testing -->
+    </classes>
+  </test> <!-- Program Test on FF(failed) -->
+  <test thread-count="1" verbose="2" name="Program Test on IE(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <parameter name="url" value="https://www.monsterindia.com/"/>
+    <classes>
+      <class name="com.automationpratice.pageclasses.homepage.home.Testing">
+        <methods>
+          <include name="loginScreen" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.automationpratice.pageclasses.homepage.home.Testing -->
+    </classes>
+  </test> <!-- Program Test on IE(failed) -->
+</suite> <!-- Failed suite [Regression suite1] -->
